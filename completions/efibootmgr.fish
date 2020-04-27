@@ -8,4 +8,4 @@ function __fish_ebm_using_command
   return 1
 end
 
-complete -f -c efibootmgr -n '__fish_ebm_using_command --bootnext' -a "(efibootmgr | grep Boot0 | sed 's/* /\t/')"
+complete -f -c efibootmgr -n '__fish_ebm_using_command --bootnext' -a "(efibootmgr | grep Boot0 | sed 's/* /\t/' | sed 's/Boot//')"
